@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  Test_name: MyString
+  tsai.stephen@gmail.com: MyString
+  test_login: MyString
+
+two:
+  Test_name: MyString
+  tsai.stephen@gmail.com: MyString
+  test_login: MyString
