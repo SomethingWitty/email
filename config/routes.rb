@@ -1,6 +1,5 @@
 Email::Application.routes.draw do
-  get "emailer/send_email"
-	root to: "emailer#send_email"
+	post "emailer/send_email"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

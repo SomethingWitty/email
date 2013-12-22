@@ -6,11 +6,11 @@ Email::Application.initialize!
 
 ActionMailer::Base.delivery_method = :smtp
 ActionMailer::Base.smtp_settings = {
-  :address        => 'smtp.sendgrid.net',
-  :port           => '587',
+	:address 				=> "smtp.mandrillapp.com",
+	:port						=> 587,
   :authentication => :plain,
-  :user_name      => 'app20526350@heroku.com',
-  :password       => 'mfu5i2o4',
-  :domain         => 'heroku.com',
+	:user_name			=> APP_CONFIG['username'],
+	:password				=> APP_CONFIG['password'],
+	:domain 				=> "example.com",
   :enable_starttls_auto => true
 }
