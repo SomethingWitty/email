@@ -2,8 +2,6 @@ require 'mail'
 
 class EmailerController < ApplicationController
   def send_email
-		puts "blah"
-		Notifier.send_email.deliver
-		puts "second one"
+		Notifier.send_email(params["to"], params["subject"], params["body"]).deliver
   end
 end
